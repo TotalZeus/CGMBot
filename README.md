@@ -1,26 +1,26 @@
-Discord Glucose Monitor Bot
+# Discord Glucose Monitor Bot
 
-Description
+## Description
 
 This Discord bot monitors glucose levels using the Dexcom API and stores user credentials and limits in an SQLite database. The bot retrieves real-time glucose readings, updates its status, and sends alerts when glucose levels exceed user-defined thresholds.
 
-Features
+## Features
 
-Retrieves glucose readings from the Dexcom API.
+* Retrieves glucose readings from the Dexcom API.
 
-Updates Discord bot status with the current glucose level and trend.
+* Updates Discord bot status with the current glucose level and trend.
 
-Stores user credentials and glucose limits securely in an SQLite database.
+* Stores user credentials and glucose limits securely in an SQLite database.
 
-Allows users to set and update their glucose monitoring preferences.
+* Allows users to set and update their glucose monitoring preferences.
 
-Sends direct messages to users when glucose levels exceed set thresholds.
+* Sends direct messages to users when glucose levels exceed set thresholds.
 
-Supports DM commands for setting credentials, limits, and retrieving data.
+* Supports DM commands for setting credentials, limits, and retrieving data.
 
-Admin command to purge messages.
+* Admin command to purge messages.
 
-Automated glucose monitoring every minute.
+* Automated glucose monitoring every minute.
 
 Requirements
 
@@ -28,9 +28,9 @@ Python 3.8+
 
 Required Python libraries:
 
-discord.py
+'discord.py'
 
-asyncio
+'asyncio'
 
 pydexcom
 
