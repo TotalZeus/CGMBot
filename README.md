@@ -30,7 +30,7 @@ This Discord bot monitors glucose levels using the Dexcom API and securely store
 *```sh
   pip install discord.py asyncio pydexcom sqlite3
 
-🚀 Installation
+## 🚀 Installation
 Clone this repository or download the script.
 Install dependencies:
 sh
@@ -39,13 +39,13 @@ Edit
 pip install discord.py asyncio pydexcom sqlite3
 Set up a bot on the Discord Developer Portal and obtain a bot token.
 Replace BOT_TOKEN in the script with your actual bot token.
-📌 Usage
-▶️ Run the bot:
+## 📌 Usage
+# ▶️ Run the bot:
 sh
 Copy
 Edit
 python script.py
-💬 Available Commands
+## 💬 Available Commands
 DM Commands
 setcredentials <username> <password> → Store Dexcom credentials.
 setlimits <lower> <upper> → Set glucose limits.
@@ -55,14 +55,13 @@ Guild Commands
 %getglucose → Retrieve glucose reading (server command).
 %removedata <option> → Remove user data (credentials, limits, or all).
 %purge <amount> → Delete a specified number of messages (admin-only).
-📌 Notes
+## 📌 Notes
 ✅ The bot fetches glucose readings every 60 seconds.
 ✅ Dexcom credentials are securely stored in an SQLite database.
 ✅ Keep your bot token private to prevent unauthorized access.
 
-⚠️ Security Warning
+## ⚠️ Security Warning
 ❌ Do not expose your bot token or Dexcom credentials in a public repository.
 
-✒️ Author
-Nicholas Munoz
+## ✒️ Author
 # Nicholas Munoz
