@@ -50,14 +50,19 @@ This Discord bot monitors glucose levels using the Dexcom API and securely store
 # Available Commands
 # DM Commands:
 
-🔹 setcredentials <username> <password> → Store Dexcom credentials.
-🔹 setlimits <lower> <upper> → Set glucose limits.
+🔹setcredentials <username> <password> → Store Dexcom credentials.
+
+🔹setlimits <lower> <upper> → Set glucose limits.
+
 🔹getglucose → Retrieve current glucose reading.
+
 🔹getdata → Display stored user data.
 
 # Guild Commands
 🔹%getglucose → Retrieve glucose reading (server command).
+
 🔹%removedata <option> → Remove user data (credentials, limits, or all).
+
 🔹%purge <amount> → Delete a specified number of messages (admin-only).
 
 ## 📌 Notes
