@@ -27,34 +27,36 @@ This Discord bot monitors glucose levels using the Dexcom API and securely store
 * Python 3.8+
 
 * Required Python libraries:
-*```sh
+  ```sh
   pip install discord.py asyncio pydexcom sqlite3
 
-## 🚀 Installation
-Clone this repository or download the script.
-Install dependencies:
-sh
-Copy
-Edit
-pip install discord.py asyncio pydexcom sqlite3
-Set up a bot on the Discord Developer Portal and obtain a bot token.
-Replace BOT_TOKEN in the script with your actual bot token.
+## 🔧 Installation
+* Clone this repository or download the script.
+
+* Install dependencies:
+  ```sh
+  pip install discord.py asyncio pydexcom sqlite3
+  
+* Set up a bot on the Discord Developer Portal and obtain a bot token.
+* Replace BOT_TOKEN in the script with your actual bot token.
+
 ## 📌 Usage
-# ▶️ Run the bot:
-sh
-Copy
-Edit
-python script.py
-## 💬 Available Commands
-DM Commands
-setcredentials <username> <password> → Store Dexcom credentials.
-setlimits <lower> <upper> → Set glucose limits.
-getglucose → Retrieve current glucose reading.
-getdata → Display stored user data.
-Guild Commands
-%getglucose → Retrieve glucose reading (server command).
-%removedata <option> → Remove user data (credentials, limits, or all).
-%purge <amount> → Delete a specified number of messages (admin-only).
+# ▶️Run the bot:
+    ```sh
+    python script.py
+# Available Commands
+# DM Commands:
+
+* 🔹 setcredentials <username> <password> → Store Dexcom credentials.
+* 🔹 setlimits <lower> <upper> → Set glucose limits.
+* 🔹getglucose → Retrieve current glucose reading.
+* 🔹getdata → Display stored user data.
+
+# Guild Commands
+* 🔹%getglucose → Retrieve glucose reading (server command).
+* 🔹%removedata <option> → Remove user data (credentials, limits, or all).
+* 🔹%purge <amount> → Delete a specified number of messages (admin-only).
+
 ## 📌 Notes
 ✅ The bot fetches glucose readings every 60 seconds.
 ✅ Dexcom credentials are securely stored in an SQLite database.
@@ -64,4 +66,4 @@ Guild Commands
 ❌ Do not expose your bot token or Dexcom credentials in a public repository.
 
 ## ✒️ Author
-# Nicholas Munoz
+ Nicholas Munoz
