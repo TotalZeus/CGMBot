@@ -41,9 +41,10 @@ This Discord bot monitors glucose levels using the Dexcom API and securely store
 * Replace BOT_TOKEN in the script with your actual bot token.
 
 ##📌 Usage
-#▶️Run the bot:
 
-    ```sh
+###▶️Run the bot:
+
+    ```md
     python script.py
 # Available Commands
 # DM Commands:
