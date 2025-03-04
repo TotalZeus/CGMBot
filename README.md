@@ -1,91 +1,88 @@
-# Discord Glucose Monitor Bot
+## Discord Glucose Monitor Bot
 
-## Description
+# 📌 Description
 
-This Discord bot monitors glucose levels using the Dexcom API and stores user credentials and limits in an SQLite database. The bot retrieves real-time glucose readings, updates its status, and sends alerts when glucose levels exceed user-defined thresholds.
+This Discord bot monitors glucose levels using the Dexcom API and securely stores user credentials and limits in an SQLite database. The bot retrieves real-time glucose readings, updates its status, and sends alerts when glucose levels exceed user-defined thresholds.
 
-## Features
+## 🚀 Features
 
-* Retrieves glucose readings from the Dexcom API.
+✅ Retrieves glucose readings from the Dexcom API.
 
-* Updates Discord bot status with the current glucose level and trend.
+✅ Updates Discord bot status with the current glucose level and trend.
 
-* Stores user credentials and glucose limits securely in an SQLite database.
+✅ Securely stores user credentials and glucose limits in an SQLite database.
 
-* Allows users to set and update their glucose monitoring preferences.
+✅ Allows users to set and update their glucose monitoring preferences.
 
-* Sends direct messages to users when glucose levels exceed set thresholds.
+✅ Sends direct messages when glucose levels exceed set thresholds.
 
-* Supports DM commands for setting credentials, limits, and retrieving data.
+✅ Supports DM commands for setting credentials, limits, and retrieving data.
 
-* Admin command to purge messages.
+✅ Admin command to purge messages.
 
-* Automated glucose monitoring every minute.
+✅ Automated glucose monitoring every minute.
 
-Requirements
+## 🛠 Requirements
 
-Python 3.8+
+* Python 3.8+
 
-Required Python libraries:
+* Required Python libraries:
 
-'discord.py'
+```sh
+pip install discord.py asyncio pydexcom sqlite3
 
-'asyncio'
+## 🔧 Installation
 
-pydexcom
+* Clone this repository or download the script.
 
-sqlite3
+* Install dependencies:
 
-Installation
+```sh
+pip install discord.py asyncio pydexcom sqlite3
 
-Clone this repository or download the script.
+* Set up a bot on the Discord Developer Portal and obtain a bot token.
 
-Install dependencies:
+* Replace BOT_TOKEN in the script with your actual bot token.
 
-pip install discord.py asyncio pydexcom
+## ▶️ Usage
 
-Set up a bot on the Discord Developer Portal and obtain a bot token.
+# Run the bot:
 
-Replace BOT_TOKEN in the script with your actual bot token.
-
-Usage
-
-Run the bot:
-
+```sh
 python script.py
 
-Available Commands:
+# Available Commands
 
-DM Commands:
+# DM Commands:
 
-setcredentials <username> <password>: Store Dexcom credentials.
+* 🔹 setcredentials <username> <password> – Store Dexcom credentials.
 
-setlimits <lower> <upper>: Set glucose limits.
+* 🔹 setlimits <lower> <upper> – Set glucose limits.
 
-getglucose: Retrieve current glucose reading.
+* 🔹 getglucose – Retrieve current glucose reading.
 
-getdata: Display stored user data.
+* 🔹 getdata – Display stored user data.
 
-Guild Commands:
+# Guild Commands:
 
-%getglucose: Retrieve glucose reading (server command).
+* 🔹 %getglucose – Retrieve glucose reading (server command).
 
-%removedata <option>: Remove user data (credentials, limits, or all).
+* 🔹 %removedata <option> – Remove user data (credentials, limits, or all).
 
-%purge <amount>: Delete a specified number of messages (admin-only).
+* 🔹 %purge <amount> – Delete a specified number of messages (admin-only).
 
-Notes
+## ℹ️ Notes
 
-The bot continuously fetches glucose readings every 60 seconds.
+* 🔄 The bot fetches glucose readings every 60 seconds.
 
-The Dexcom credentials are stored securely in an SQLite database.
+* 🔐 Dexcom credentials are securely stored in an SQLite database.
 
-The bot token should be kept private to prevent unauthorized access.
+* 🚨 Keep your bot token private to prevent unauthorized access.
 
-Security Warning
+## ⚠️ Security Warning
 
-Do not expose your bot token or Dexcom credentials in a public repository.
+* ❗ Do not expose your bot token or Dexcom credentials in a public repository.
 
-Author
+## ✍️ Author
 
-Nicholas Munoz
+# Nicholas Munoz
