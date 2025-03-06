@@ -42,13 +42,13 @@ This Discord bot monitors glucose levels using the Dexcom API and securely store
 
 ## 📌 Usage
 
-# ▶️ Run the bot:
+### ▶️ Run the bot:
 
    ```sh
    python script.py
    ```
 # Available Commands
-# DM Commands:
+## DM Commands:
 
 🔹setcredentials <username> <password> → Store Dexcom credentials.
 
