@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGMBot - Dexcom Glucose Monitoring</title>
+    <style>
+        
+		header h1 {
+			color: #ffffff; /* White */
+		}		
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #38ad14, #5865f3);
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #0078d7;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "✔";
+            color: #0078d7;
+            margin-right: 10px;
+        }
+        .command {
+            background: #f4f4f4;
+            padding: 15px;
+            border-left: 5px solid #0078d7;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        code {
+            background: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: block;
+            margin-top: 5px;
+        }
+        a {
+            color: #0078d7;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: #005bb5;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+		section h2 {
+			color: #0078d7;
+		}
+		section ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		section ul li {
+			margin: 10px 0;
+		}
+		section a {
+			color: #0078d7;
+			text-decoration: none;
+		}
+		section a:hover {
+			text-decoration: underline;
+		}		
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CGMBot</h1>
+        <p>Your Discord Bot for Dexcom Glucose Monitoring</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About CGMBot</h2>
+            <p>Monitor your glucose levels in real-time using Dexcom data directly from Discord.</p>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Securely set your Dexcom credentials.</li>
+                <li>Configure custom glucose alerts.</li>
+                <li>Receive real-time glucose readings.</li>
+                <li>Get notified when glucose levels are out of range.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Commands</h2>
+            <div class="command">
+                <strong>Set Dexcom Credentials</strong>
+                <code>setcredentials &lt;username&gt; &lt;password&gt;</code>
+            </div>
+            <div class="command">
+                <strong>Set Glucose Limits</strong>
+                <code>setlimits &lt;lower&gt; &lt;upper&gt;</code>
+            </div>
+            <div class="command">
+                <strong>Get Current Glucose</strong>
+                <code>getglucose</code>
+            </div>
+            <div class="command">
+                <strong>View Stored Data</strong>
+                <code>getdata</code>
+            </div>
+            <div class="command">
+                <strong>Remove Data</strong>
+                <code>removedata &lt;credentials|limits|all&gt;</code>
+            </div>
+        </section>
+
+        <section>
+            <h2>Installation</h2>
+            <p>Invite CGMBot to your Discord server and follow the instructions above.</p>
+            <p>Check out the <a href="https://github.com/TotalZeus/CGMBot" target="_blank">GitHub repository</a> for more details.</p>
+        </section>
+
+		<section>
+			<h2>Contact Us</h2>
+			<p>Have questions or need support? Feel free to reach out:</p>
+			<ul>
+                <li>Email: <a href="mailto:nicholas_mnz@csu.fullerton.edu">Email</a>
+				<li>GitHub: <a href="https://github.com/TotalZeus/CGMBot" target="_blank">CGMBot Repository</a></li>
+				<li>Discord: <a href="https://discord.gg/hTYdRgs9" target="_blank">Join Our Discord</a></li>
+			</ul>
+		</section>
+		
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CGMBot. All rights reserved.</p>
+    </footer>
+</body>
+</html>
